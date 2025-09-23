@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisum</title>
+    <style>
+      header {
+      background-color:rgb(77, 150, 247);
+      color: rgb(81, 176, 231);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border: 1px solid black;
+    }
+     header input[type="text"] {
+      width: 30%;
+      padding: 0.5rem;
+      border: 1px solid black;
+      border-radius: 20px;
+    }
+    header .nav {
+      display: flex;
+      gap: 1rem;
+    }
+    header .nav a {
+      color: rgb(8, 8, 8);
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    header .nav a:hover{
+        text-decoration: underline;
+    }
+    .container{
+        position: relative;
+
+    }
+    .content {
+        position: absolute;
+         top:30%;
+         width: 300px;
+         text-align: center;
+         color: rgb(15, 15, 15);
+          margin: 0 0 0 500px;
+        font-style: italic; 
+    }
+    .content button{
+        border-radius: 7px;
+        height: 35px;
+        background-color: bisque;
+       
+
+    }
+    .content button:hover{
+        box-shadow: 1px 3px 6px 5px rgb(223, 248, 206);
+      
+    }
+     .content button  a{
+        text-decoration: none;
+     }
+       
+     .content button  a:visited{
+          color: rgb(1, 58, 25);
+          text-decoration: none;
+     }
+    .content button  a:hover{
+          color: rgb(12, 12, 12);
+         text-decoration: underline;
+     }
+     .content button  a:active{
+         color: yellow;
+         text-decoration: none;
+         background-color: black;
+     }
+     .Destination{
+        background-color: rgb(165, 247, 196);
+        height: 500px;
+        width: 99%;
+        position: absolute;
+       
+     }
+      .Destination h3{
+        text-align: center;
+        position: sticky;
+      }
+     .view{
+        text-align: center;
+     }
+     .view button{
+        background-color: aquamarine;
+        border-radius: 40px;
+        height: 45px;
+        width: 100px;
+        margin-top: 20px;
+       
+       
+     }
+     .view button h3 a {
+        text-decoration: none;
+        text-align: center;
+     }
+      .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      border-color: #007bff;
+    }
+   
+     .footer {
+           background-color: #080808;
+           text-align: center;
+           padding: 10px;
+           left: 0;
+           bottom: 0;
+           width: 99%;
+          
+       }
+
+       .footer p{
+        text-align: center;
+        color: antiquewhite;
+        font-size: 20px;
+       } 
+    </style>
+</head>
+<body>
+    <div>
+      <header>
+         <input type="text" placeholder="Search.." >
+         <div class="nav">
+            <a href="TOURISUMPROJECT.html">Home</a>
+            <a href="#">Destination</a>
+            <a href="#">Gallery</a>
+            <a href="signin.html">Signin</a>
+            <a href="#">Feedback</a>
+        </div>
+      </header>
+      <div class="container">
+        <img src="./OIP (1).webp" width="100%" height="500px">
+      </div>
+      <div class="content">
+          <h1>TOURISUM MANAGEMENT SYSTEM</h1>
+           <button> <a href="signin.html"> SIGNIN</a></button>
+            <button> <a href="signup.html"> SIGNUP</a></button>
+
+      </div>
+      
+        <div class="Destination">
+            <h3>Popular Destination</h3>
+          <hr>
+
+        <div  style="display: flex;">
+
+        <div class="card" style="background-color: rgb(201, 199, 196);
+                 text-align: center; 
+                  ">
+          <img src="./backwater-tourism.jpg" alt="" width="250px" height="270px">
+           <h3><a href="" style="text-decoration: none;">KERALA</a></h3>
+        </div>
+
+       <div class="card" style="background-color: rgb(201, 199, 196);
+                 text-align: center;
+                 margin-left: 15px;
+                  ">
+           <img src="./537fcf2bea3279dbc59898e6b3a3ca1c84bbd89a4cae41ec05c21115e4cb1d86.avif" alt="" width="250px" height="270px">
+           <h3><a href="" style="text-decoration: none;">GOA</a></h3>
+        </div>
+
+        <div class="card" style="background-color: rgb(201, 199, 196);
+                 text-align: center;
+                  margin-left: 15px;
+                  ">
+           <img src="./1Gm7gO.jpg" alt="" width="250px" height="250px">
+           <h3><a href="" style="text-decoration: none;">Kerala</a></h3>
+        </div>
+
+        <div class="card" style="background-color: rgb(201, 199, 196);
+                 text-align: center;
+                 margin-left: 15px;
+                  ">
+           <img src="./1Gm7gO.jpg" alt="" width="250px" height="250px">
+           <h3><a href="" style="text-decoration: none;">Kerala</a></h3>
+        </div>
+
+        <div class="card" style="background-color: rgb(201, 199, 196);
+                     text-align: center;
+                     margin-left: 15px;
+                  ">
+           <img src="./1Gm7gO.jpg" alt="" width="250px" height="250px">
+           <h2><a href="" style="text-decoration: none;">Kerala</a></h2>
+        </div>
+        </div> 
+        <div class="view"><button><h3><a href="">view more</a></h3></button>
+        </div> 
+
+
+        <hr>
+         <div class="footer">
+            <p> Content</p>
+
+         </div>
+
+
+    </div>
+</body>
+</html>
