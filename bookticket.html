@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookticket</title>
+
+    <style>
+        
+        .viewmore-container {
+            width: 50%;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+          background-color: transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            height: auto;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 2px solid rgb(200, 234, 248);
+
+            
+        }
+        .viewmore-container h1{
+            margin-bottom: 10px;
+            color: #c752c7;
+            margin-top: 20px;
+
+
+        }
+        .viewmore-container h2{
+            margin-bottom: 10px;
+            color: #141314;
+
+        }
+         .viewmore-container h2:hover{
+            color: rgb(192, 187, 187);
+            text-decoration: underline;
+
+         }
+          .viewmore-container .card{
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(165, 247, 196);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            height: 20px;
+            border: 1px solid black;
+
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(200, 234, 248);
+            border-radius: 5px;
+           
+           
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+
+        }
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #324d33;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            
+            
+        }
+    </style>
+</head>
+<body style="background-color:  rgb(200, 234, 248);">
+    
+        <div class="viewmore-container" >
+            <h1> BOOK TICKET</h1>
+            <h2>Fill the form to book your ticket</h2>
+            <form action="bookticketthanks.html" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="number">Mobile No:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="destination">Destination:</label><br>
+                <input type="text" id="destination" name="destination" required><br><br>
+                
+                <label for="date">Date of Travel:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                
+                <label for="tickets">Number of Tickets:</label><br>
+                <input type="number" id="tickets" name="tickets" min="1" required><br><br>
+                
+                <input type="submit" value="Book Ticket">
+        </div>
+    </form>
+</body>
+</html>
